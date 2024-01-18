@@ -15,7 +15,7 @@ Category.hasMany(Product, {
   foreignKey: 'category_id',
 });
 
-// Products belong to many Tags (through ProductTag). This is a many to many relationship. Product_tags is the join table. 
+// Products belong to many Tags (through ProductTag)
 Product.belongsToMany(Tag, {
   through: ProductTag,
   foreignKey: 'product_id',
